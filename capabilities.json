@@ -1,19 +1,25 @@
 {
     "dataRoles": [
         {
-            "displayName": "Category Data",
+            "displayName": "Category",
             "name": "category",
             "kind": "Grouping"
-        },
-        {
-            "displayName": "Measure Data",
-            "name": "measure",
-            "kind": "Measure"
         }
     ],
     "objects": {
-        "dataPoint": {
-            "displayName": "Data colors",
+        "general": {
+            "displayName": "General",
+            "displayNameKey": "formattingGeneral",
+            "properties": {
+                "filter": {
+                    "type": {
+                        "filter": true
+                    }
+                }
+            }
+        },
+        "options": {
+            "displayName": "Options",
             "properties": {
                 "defaultColor": {
                     "displayName": "Default color",
@@ -25,14 +31,8 @@
                         }
                     }
                 },
-                "showAllDataPoints": {
-                    "displayName": "Show all",
-                    "type": {
-                        "bool": true
-                    }
-                },
-                "fill": {
-                    "displayName": "Fill",
+                "selectColor": {
+                    "displayName": "Sign Color",
                     "type": {
                         "fill": {
                             "solid": {
@@ -41,18 +41,38 @@
                         }
                     }
                 },
-                "fillRule": {
-                    "displayName": "Color saturation",
+                "rLabel": {
+                    "displayName": "Label (true)",
                     "type": {
-                        "fill": {}
+                        "text": true
                     }
                 },
-                 "fontSize": {
-                    "displayName": "Text Size",
+                "lLabel": {
+                    "displayName": "Label (false)",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Font Size",
                     "type": {
                         "formatting": {
                             "fontSize": true
                         }
+                    }
+                },
+                "fontFamily": {
+                    "displayName": "Font Size",
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "changeLabelColor": {
+                    "displayName": "Change Label Color",
+                    "type": {
+                        "bool": true
                     }
                 }
             }
@@ -68,17 +88,15 @@
                     "dataReductionAlgorithm": {
                         "top": {}
                     }
-                },
-                "values": {
-                    "select": [
-                        {
-                            "bind": {
-                                "to": "measure"
-                            }
-                        }
-                    ]
                 }
-            }
+            },
+            "conditions": [{
+                "category": {
+                    "max": 1
+                }
+            }]
         }
-    ]
+    ],
+    "suppressDefaultTitle": true,
+    "supportsSynchronizingFilterState": true
 }

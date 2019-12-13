@@ -1,1 +1,25 @@
-{"visual":{"name":"booleanslicer","displayName":"booleanslicer","guid":"booleanslicer86289AEC4D37424DB1AA15C7F60EB0F7","visualClassName":"Visual","version":"1.0.0","description":"","supportUrl":"","gitHubUrl":""},"apiVersion":"2.6.0","author":{"name":"","email":""},"assets":{"icon":"assets/icon.png"},"externalJS":null,"style":"style/visual.less","capabilities":"capabilities.json","dependencies":null,"stringResources":[]}
+{
+    "visual": {
+        "name": "BooleanSlicer",
+        "displayName": "Boolean Slicer",
+        "guid": "BooleanSlicer86289AEC4D37424DB1AA15C7F60EB0F7",
+        "visualClassName": "Visual",
+        "version": "1.0.0",
+        "description": "A slicer for boolean value",
+        "supportUrl": "https://github.com/marepilc/BooleanSlicer/issues",
+        "gitHubUrl": "https://github.com/marepilc/BooleanSlicer"
+    },
+    "apiVersion": "2.6.0",
+    "author": {
+        "name": "Marek Pilczuk",
+        "email": "-"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": [],
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}

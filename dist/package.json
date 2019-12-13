@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "author": {"name":"Marek Pilczuk","email":"-"},
+    "resources": [
+        {
+            "resourceId": "rId0",
+            "sourceType": 5,
+            "file": "resources/BooleanSlicer86289AEC4D37424DB1AA15C7F60EB0F7.pbiviz.json"
+        }
+    ],
+    "visual": {"name":"BooleanSlicer","displayName":"Boolean Slicer","guid":"BooleanSlicer86289AEC4D37424DB1AA15C7F60EB0F7","visualClassName":"Visual","version":"1.0.0","description":"A slicer for boolean value","supportUrl":"https://github.com/marepilc/BooleanSlicer/issues","gitHubUrl":"https://github.com/marepilc/BooleanSlicer"},
+    "metadata": {
+        "pbivizjson": {
+            "resourceId": "rId0"
+        }
+    }  
+}
