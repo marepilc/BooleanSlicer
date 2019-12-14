@@ -96,6 +96,12 @@ export class Visual implements IVisual {
         let rBtn = this.rBtn;
         let rLabel = this.rLabel;
 
+        if (options.jsonFilters.length == 0) {
+            status.value = 'all';
+        } else {
+            status.value = (options.jsonFilters[0]['values'][0])? 'true' : 'false';
+        }
+
         const basicFilter: models.IBasicFilter = {
             "$schema": "http://powerbi.com/product/schema#basic",
             filterType: 1,
@@ -174,7 +180,7 @@ export class Visual implements IVisual {
                 rBtn.innerHTML = drawBtn(squareSize, opt.options.defaultColor, 'right');
                 rLabel.style.color = opt.options.defaultColor;
             }
-        }    
+        }
     }
 
     private static parseSettings(dataView: DataView): VisualSettings {
